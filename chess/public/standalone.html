@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #ecf0f1;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .btn-secondary {
+            background-color: #95a5a6;
+        }
+        .btn-secondary:hover {
+            background-color: #7f8c8d;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 0;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Chess Master</h1>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Experience Chess Like Never Before</h2>
+            <p>Challenge your mind with our advanced AI, play against friends, or improve your skills with personalized training.</p>
+            <a href="#" class="btn">Play Now</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">♔</div>
+                <h3>Player vs Computer</h3>
+                <p>Challenge our AI at different difficulty levels and improve your skills.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♕</div>
+                <h3>Local Multiplayer</h3>
+                <p>Play against a friend on the same device with customizable settings.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♖</div>
+                <h3>Online Matches</h3>
+                <p>Challenge players from around the world in real-time matches.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♘</div>
+                <h3>Practice Mode</h3>
+                <p>Study openings, solve puzzles, and improve your endgame skills.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♙</div>
+                <h3>1vs1 Mode</h3>
+                <p>Challenge a friend in a direct head-to-head match with custom rules.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♗</div>
+                <h3>Hyper Mode</h3>
+                <p>Test your skills against our most challenging AI with advanced strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Chess Master. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for the hero section
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('.hero');
+            hero.style.opacity = '0';
+            hero.style.transform = 'translateY(20px)';
+            hero.style.transition = 'opacity 1s, transform 1s';
+            
+            setTimeout(function() {
+                hero.style.opacity = '1';
+                hero.style.transform = 'translateY(0)';
+            }, 300);
+            
+            // Animate feature cards
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s, transform 0.5s';
+                
+                setTimeout(function() {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 500 + (index * 100));
+            });
+        });
+    </script>
+</body>
+</html>

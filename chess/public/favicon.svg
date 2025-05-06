@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chess-knight">
+  <path d="M17 3H7a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4Z" fill="#6366f1" stroke="#6366f1"/>
+  <path d="M14 8a2 2 0 0 0-2-2H8v2" stroke="white"/>
+  <path d="M15 10a2 2 0 0 0-2-2h-1v3" stroke="white"/>
+  <path d="M16 12a2 2 0 0 0-2-2h-1v2" stroke="white"/>
+  <path d="M8 14h8" stroke="white"/>
+  <path d="M8 10h1" stroke="white"/>
+  <path d="M8 6h1" stroke="white"/>
+</svg>

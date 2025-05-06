@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Registration | SmartChess</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0070f3;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #111;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .tournament-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .info-item {
+            margin-bottom: 20px;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #0070f3;
+            margin-bottom: 5px;
+        }
+        .countdown {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .countdown-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0070f3;
+        }
+        .prize-pool {
+            background-color: #f0fff4;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .prize-amount {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #10b981;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0070f3;
+            box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.2);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .checkbox-group input {
+            width: auto;
+        }
+        .submit-button {
+            display: inline-block;
+            background-color: #0070f3;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #0051a8;
+        }
+        .rules {
+            margin-top: 30px;
+        }
+        .rules h3 {
+            margin-bottom: 10px;
+        }
+        .rules ul {
+            padding-left: 20px;
+        }
+        .rules li {
+            margin-bottom: 5px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SmartChess</div>
+        <a href="/" class="back-link">← Back to Home</a>
+    </header>
+
+    <main>
+        <h1>Summer Chess Championship 2023</h1>
+        <div class="subtitle">Register now for our biggest online tournament of the year!</div>
+        
+        <div class="container">
+            <div class="tournament-info">
+                <h2>Tournament Details</h2>
+                
+                <div class="countdown">
+                    <div>Registration Closes In</div>
+                    <div class="countdown-value">14 Days</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">Date & Time</div>
+                    <div>Saturday, June 10, 2023</div>
+                    <div>Starting at 2:00 PM UTC</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">Format</div>
+                    <div>Swiss System, 7 Rounds</div>
+                    <div>Time Control: 15+10 (15 minutes with 10 second increment)</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">Eligibility</div>
+                    <div>Open to all SmartChess members</div>
+                    <div>Players of all ratings welcome</div>
+                </div>
+                
+                <div class="prize-pool">
+                    <div>Total Prize Pool</div>
+                    <div class="prize-amount">$5,000</div>
+                    <div>1st Place: $2,000 | 2nd Place: $1,000 | 3rd Place: $500</div>
+                    <div>Plus category prizes and special awards</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">Entry Fee</div>
+                    <div>$15 Standard Entry</div>
+                    <div>$10 for Premium Members</div>
+                    <div>Free entry for Titled Players (GM, IM, FM)</div>
+                </div>
+                
+                <div class="rules">
+                    <h3>Tournament Rules</h3>
+                    <ul>
+                        <li>All games will be played on the SmartChess platform</li>
+                        <li>Players must be online and ready 15 minutes before the start time</li>
+                        <li>Fair play monitoring will be in effect for all games</li>
+                        <li>Tiebreaks: Buchholz, Sonneborn-Berger, Direct Encounter</li>
+                        <li>Tournament Director's decisions are final</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="registration-form">
+                <h2>Registration Form</h2>
+                
+                <form id="tournament-registration">
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="username">SmartChess Username *</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Current Rating (if known)</label>
+                        <input type="number" id="rating" name="rating" min="0" max="3000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country *</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="in">India</option>
+                            <option value="ru">Russia</option>
+                            <option value="cn">China</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="title">Chess Title (if any)</label>
+                        <select id="title" name="title">
+                            <option value="none">None</option>
+                            <option value="cm">CM</option>
+                            <option value="fm">FM</option>
+                            <option value="im">IM</option>
+                            <option value="gm">GM</option>
+                            <option value="wfm">WFM</option>
+                            <option value="wim">WIM</option>
+                            <option value="wgm">WGM</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="entry-type">Entry Type *</label>
+                        <select id="entry-type" name="entry-type" required>
+                            <option value="standard">Standard Entry ($15)</option>
+                            <option value="premium">Premium Member ($10)</option>
+                            <option value="titled">Titled Player (Free)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Additional Comments</label>
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the tournament rules and fair play policy *</label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="notifications" name="notifications">
+                        <label for="notifications">Send me notifications about future tournaments</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 SmartChess. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('tournament-registration').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for registering! You will receive a confirmation email shortly.');
+            // In a real application, this would submit the form data to a server
+        });
+    </script>
+</body>
+</html>
