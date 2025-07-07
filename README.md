@@ -1,41 +1,54 @@
-# Project Name
+# ChessVision - Modern Chess Game
 
-[Brief description of your project - what it does, its purpose]
 
-## Technologies Used
+A feature-rich chess application built with React, TypeScript, and Tailwind CSS, featuring beautiful animations and intuitive gameplay.
 
-- **Vite** - Next Generation Frontend Tooling
-- **React** - JavaScript library for building user interfaces
-- **TypeScript** - Typed JavaScript
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn-ui** - Beautifully designed components
+## 🚀 Features
 
-## Getting Started
+### Gameplay
+- ♟️ Standard chess rules implementation
+- ⏱️ Move timer/clock functionality
+- 📜 Move history tracking
+- ♻️ Undo/redo moves
+- 🏆 Win/lose/draw conditions
 
-Follow these instructions to get the project up and running on your local machine.
+### Visual Experience
+- ✨ Smooth animations with Framer Motion
+- 🎨 Themed chess pieces and boards
+- 🌓 Light/dark mode support
+- 🖱️ Drag-and-drop piece movement
+- 🔍 Move hints and valid move indicators
+
+### Technical
+- ⚡ Blazing fast with Vite
+- 🛠 Type-safe with TypeScript
+- 🎨 Styled with Tailwind CSS + shadcn/ui
+- 📱 Fully responsive design
+- 📊 Analytics dashboard with Recharts
+
+## 🛠 Tech Stack
+
+| Category          | Technologies                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| Core              | React 18, TypeScript, Vite                                                  |
+| Styling           | Tailwind CSS, Tailwind Merge, Tailwind Animate                              |
+| UI Components     | shadcn/ui, Radix UI Primitives                                              |
+| Animation         | Framer Motion                                                               |
+| State Management  | React Query, React Hook Form                                                |
+| Routing           | React Router v6                                                             |
+| Notifications     | Sonner                                                                      |
+| 3D Elements       | Spline (via @splinetool/react-spline)                                       |
+| Icons             | Lucide React                                                                |
+
+##  Getting Started
 
 ### Prerequisites
-
-- Node.js (v16 or higher recommended)
-- npm (comes with Node.js) or yarn
+- Node.js v18+
+- npm v9+ or yarn
 - Git
 
 ### Installation
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
-## Install dependance 
-npm install
-# or
-yarn install
-## Run the development server
-npm run dev
-# or
-yarn dev
-
-
-
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/chessvision.git
+   cd chessvision
