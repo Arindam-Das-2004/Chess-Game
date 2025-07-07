@@ -52,3 +52,13 @@ A feature-rich chess application built with React, TypeScript, and Tailwind CSS,
    ```bash
    git clone https://github.com/your-username/chessvision.git
    cd chessvision
+Install dependencies:
+npm install
+# or
+yarn install
+
+
+Start the development server (opens on port 3000):
+npm run dev
+# or
+yarn dev
